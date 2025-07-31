@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction to call stack and array</title>
+    </head>
+    <body>
+      <h2>Javascript Arrays</h2>
+      <p id=one></p>
+        <script>
+            var cars = ["Honda", "Toyota", "Ford"];
+            document.getElementById("one").innerHTML = cars[1];
+</script>
+        <h2>Array Methods</h2>
+        <p id="two"></p>
+        <p id="three"></p>
+        <p id="four"></p>
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("two").innerHTML = fruits.join(" & ");
+            document.getElementById("three").innerHTML = fruits;
+            fruits.pop();
+            document.getElementById("four").innerHTML = fruits;
+            </script>
+        <h2>Call Stack</h2>
+        <p id="callStack"></p>
+        <script>
+            function add (a, b) {
+                return a + b;
+            }
+            function average (a, b) {
+                return (a + b) / 2;
+            }
+            let result = average(50, 10);
+            document.getElementById("callStack").innerHTML = result;
+            </script>
+    </body>
+</html>
